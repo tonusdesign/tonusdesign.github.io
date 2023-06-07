@@ -1,0 +1,488 @@
+body{
+    /*background-image: url("../media/main_page_background.png");*/
+    background-color: #0075BF;
+    color: white;
+    /*background-repeat: no-repeat;
+    background-size: 100%;*/
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#ugrodeszka {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#ugrodeszka > img {
+  width: 100%;
+  height: auto;
+}
+
+/*https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll*/
+.noscrollbar {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.noscrollbar::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.wave {
+  height: 200vh;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+}
+
+
+
+.Blankspace {
+  margin-top: 600px;
+  display: flex;
+}
+
+.Projectstitle{
+display: flex;
+color: #FECC00;
+transform: rotate(-20deg);
+margin-left: 55%;
+font-size: 5.5em;
+position: absolute;
+z-index: 3;
+font-family: helvetica;
+font-weight: bold;
+}
+
+/* .Projects {
+  color: #FECC00;
+  size: 300px;
+  font-family: Helvetica;
+  font-size: 400px;
+  font-weight: bold;
+  right: 60px;
+} */
+
+
+/*
+.row{
+    min-height: 130px;
+}
+
+.first{
+    background: transparent;
+    height: 100vh;
+}
+
+.second{
+  height:50vh;
+  background-color: transparent;
+
+}
+
+.third{
+  background: transparent;
+}
+
+.row div{
+    border: 1px solid white;
+    padding: 0px;
+    transform: rotate(-20deg);
+    overflow: hidden;
+
+}
+
+.forgat{
+  transform: rotate(-20deg);
+}
+*/
+
+.felirat img {
+  width: 95%;
+  height: auto;
+  text-align: center;
+  padding-top: 7%;
+  margin-left: 3%;
+}
+
+.row0 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* .Bookdesgincsomag {
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  height: fit-content;
+} */
+
+
+.Bookdesign {
+transform: rotate(-20deg);
+margin-top: 630px;
+overflow: hidden;
+margin-left: -100px;
+height: max-content;
+font-weight: bold;
+font-size: 50px;
+font-family: helvetica;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  column-gap: 20px;
+  padding-top: -55px;
+}
+
+.row2 {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  column-gap: 20px;
+  padding-bottom: 200px;
+}
+
+/* .Posterscsomag {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+} */
+
+.Posters {
+transform: rotate(-20deg);
+margin-top: 0px;
+margin-left: -100px;
+background: transparent;
+font-weight: bold;
+font-size: 50px;
+font-family: helvetica;
+}
+
+.row3 {
+  display: flex;
+  margin-left: 430px;
+  padding-top: 80px;
+}
+
+
+.row4 {
+  /*display: flex;
+  column-gap: 20px;*/
+  margin-top: 40px;
+  padding-bottom: 300px;
+  width: 140%;
+}
+
+.Typography {
+  transform: rotate(20deg);
+  margin-top: 380px;
+  font-weight: bold;
+font-size: 50px;
+font-family: helvetica;
+width: 120%;
+margin-left: -140px;
+}
+
+.row5 {
+  display: flex;
+  overflow: hidden;
+  margin-left: 925px;
+}
+
+.row6 {
+  /*display: flex;
+  column-gap: 20px;*/
+  overflow: hidden;
+  margin-top: 20px;
+  width: 110%;
+}
+
+
+/* .UIdesign {
+transform: rotate(20deg);
+margin-top: 200px;
+font-weight: bold;
+font-size: 50px;
+font-family: helvetica;
+}
+
+.row7 {
+  display: flex;
+  overflow: hidden;
+  width: 50%;
+  height: 50%;
+} 
+
+.row8 {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}  */
+
+.UIDesign {
+  display: flex;
+  justify-content: center;
+  width: 100vh;
+  transform: rotate(20deg);
+  width: 110%;
+  overflow: hidden;
+  margin-top: 400px;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: helvetica;
+  margin-left: -80px;
+}
+
+.part1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 60%;
+  width: 60%;
+  padding-right: 20px;
+}
+
+.part1 p {
+  margin: 10px;
+}
+
+.part1 img{
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+}
+
+.part2 img{
+  margin-top: 0px;
+  height: auto;
+  width: 123%;
+}
+.Footer {
+  color: #0075BF;
+  font-family: helvetica;
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+}
+
+.Footer a {
+  text-decoration: none;
+}
+
+.Footer #gettoknowme {
+  margin-left: 45px;
+  margin-bottom: 300px;
+  padding: 15px;
+  background-color: #FECC00;
+  color: #0075BF;
+  width: fit-content;
+  transition: color 0.3s linear, background-color 0.3s linear, border-color 0.3s linear;
+}
+
+.Footer #gettoknowme:hover {
+  color: #fff;
+  background-color: #f39301; 
+}
+
+.Footer h3 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.Footer #gettoknowme a {
+  text-decoration: none;
+}
+
+.Footer #gettoknowme h3 {
+  margin-bottom: 0px;
+  color: #0075BF;
+}
+
+.Footer #gettoknowme:hover h3 {
+  color: #fff;
+}
+
+.Footer ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.Footer ul li {
+  padding-bottom: 5px;
+  transition: color 0.3s linear;
+}
+
+.Footer ul li a {
+  color: #0075BF;
+}
+
+.Footer ul li a:hover{
+  color: #f39301;
+}
+
+#contact {
+  padding-left: 45px;
+}
+
+#contact div, #contact h3 { 
+  padding-left: 15px
+}
+
+#contact .email-box {
+  position: absolute;
+  width: 178.3px;
+  border: 1px solid #0075BF;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: color 0.3s linear, background-color 0.3s linear, border-color 0.3s linear;
+}
+
+#contact .email-box .email-box-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  color: transparent;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: color 0.3s linear, background-color 0.3s linear, border-color 0.3s linear;
+}
+
+#contact .email-box:hover .email-box-overlay {
+  color: #FFF;
+  background-color: #f39200; 
+  border: 1px solid #f39200; 
+  transition: color 0.3s linear, background-color 0.3s linear, border-color 0.3s linear;
+}
+
+#contact .email-box:hover {
+  border-color: #f39200; 
+}
+
+#contact .email-box + div {
+  margin-top: 6rem;
+}
+
+/* Create four equal columns that sits next to each other 
+.col {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.col img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .col {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+*/
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+@media screen and (max-width: 600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .col img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+*/
+
+
+@keyframes carousselAnimation {
+  from {
+      transform: translateX(-200%)
+  }
+  to {
+      transform: translateX(0%);
+  }
+}
+
+.clipper{
+  width: 100vw;
+  overflow: hidden;
+}
+
+img.sepia {
+  filter: sepia(1);
+}
+
+img.sepia:hover {
+  filter: sepia(0);
+}
+
+img {
+  transition: all 200ms linear;
+}
+
+img.fade-in {
+  opacity: 1;
+}
+
+img.fade-out {
+ opacity: 0;
+}
+.caroussel-host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.caroussel {
+  display: flex;
+  transform-origin: center;
+  animation: carousselAnimation;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+}
+
+.caroussel.slower {
+  display: flex;
+  transform-origin: center;
+  animation: carousselAnimation;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+}
+
+.caroussel div img {
+  padding-left: 5px;
+  padding-right: 5px;
+}

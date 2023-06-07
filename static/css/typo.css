@@ -1,0 +1,101 @@
+@media (min-width: 992px) {
+    /*Teljes képernyős módban háttérkép, marginok*/
+    body {
+        background-image: url("../media/typo/bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .segment.trapee {
+        margin-top: 240px;
+    }
+
+    .segment.circum {
+        margin-top: 240px;
+    }
+
+    .segment.dayaagonal {
+        margin-top: 260px;
+    }
+
+    .segment .title {
+        font-size: 3em;
+    }
+
+    .segment.trapee,
+    .segment.dayaagonal {
+        padding-left: 100px;
+    }
+
+    .segment.trapee .col-title,
+    .segment.dayaagonal .col-title {
+        margin-left: -40px;
+        margin-right: 40px;
+    }
+
+    .segment.circum {
+        padding-right: 100px;
+    }
+
+    .segment.circum .col-title {
+        margin-right: -40px;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 1250px) {
+    /*Teljes képernyős módban háttérkép, marginok*/
+    .segment.trapee {
+        margin-top: 200px;
+    }
+
+    .segment.circum {
+        margin-top: 250px;
+    }
+
+    .segment.dayaagonal {
+        margin-top: 200px;
+    }
+    
+    .segment .title {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 1050px) {
+    /*Teljes képernyős módban háttérkép, marginok*/
+    .segment.trapee {
+        margin-top: 150px;
+    }
+
+    .segment.circum {
+        margin-top: 210px;
+    }
+
+    .segment.dayaagonal {
+        margin-top: 220px;
+    }
+    
+    .segment .title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 992px){
+    /*Kisebb módban nincs*/
+    body {
+        background-image: none;
+    }
+
+    .segment.trapee {
+        margin-top: 100px;
+    }
+
+    .segment.circum {
+        margin-top: 100px;
+    }
+
+    .segment.dayaagonal {
+        margin-top: 100px;
+    }
+}

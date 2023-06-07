@@ -1,0 +1,48 @@
+@media (min-width: 992px) {
+    /*Teljes képernyős módban háttérkép, marginok*/
+    body {
+        background-image: url("../media/ui/bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .segment.imbi {
+        margin-top: 300px;
+    }
+
+    .segment.nettumi {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 1250px) {
+    /*Teljes képernyős módban háttérkép, marginok*/
+    body {
+        background-image: url("../media/ui/bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .segment.imbi {
+        margin-top: 200px;
+    }
+
+    .segment.nettumi {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 992px){
+    /*Kisebb módban nincs*/
+    body {
+        background-image: none;
+    }
+
+    .segment.imbi {
+        margin-top: 100px;
+    }
+
+    .segment.nettumi {
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,109 @@
+@media (min-width: 992px) {
+    body {
+        background-image: url("../media/books/bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    
+    .segment.yellow {
+        margin-top: 200px;
+    }
+    .segment.mythos {
+        margin-top: 450px;
+    }
+    .segment.anna {
+        margin-top: 350px;
+    }
+    .segment.natural {
+        margin-top: 350px;
+    }
+
+    .segment .title {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1350px) {
+    .segment.yellow {
+        margin-top: 200px;
+    }
+    .segment.mythos {
+        margin-top: 350px;
+    }
+    .segment.anna {
+        margin-top: 300px;
+    }
+    .segment.natural {
+        margin-top: 350px;
+    }
+
+    .segment .title {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 1250px) {
+    /*Teljes képernyős módban háttérkép, marginok*/
+    .segment.yellow {
+        margin-top: 150px;
+    }
+    .segment.mythos {
+        margin-top: 300px;
+    }
+    .segment.anna {
+        margin-top: 300px;
+    }
+    .segment.natural {
+        margin-top: 300px;
+    }
+
+    .segment .title {
+        font-size: 2.5em;
+    }
+
+    .segment .title {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 1150px) {
+    .segment.natural {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 1050px) {
+    /*Teljes képernyős módban háttérkép, marginok*/
+    .segment.yellow {
+        margin-top: 140px;
+    }
+    .segment.mythos {
+        margin-top: 200px;
+    }
+    .segment.anna {
+        margin-top: 300px;
+    }
+    .segment.natural {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 992px){
+    /*Kisebb módban nincs*/
+    body {
+        background-image: none;
+    }
+
+    .segment.yellow {
+        margin-top: 150px;
+    }
+    .segment.mythos {
+        margin-top: 150px;
+    }
+    .segment.anna {
+        margin-top: 150px;
+    }
+    .segment.natural {
+        margin-top: 150px;
+    }
+}

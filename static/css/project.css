@@ -1,0 +1,95 @@
+html, body {
+  overflow-x: hidden;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  position: relative;
+  background-color: #0075BF;
+  font-family: helvetica;
+  line-height: 1;
+}
+
+.noselect {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.noscrollbar {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.noscrollbar::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.img-grow {
+  position: relative;
+  transform-origin: center center;
+  transition: transform 1s linear;
+}
+
+@media (min-width: 768px) {
+  .img-grow:hover {
+    z-index: 5000;
+    transform: scale(1.2);
+  }
+}
+
+.img-grow.right {
+  transform-origin: right center;
+}
+
+.img-grow.left {
+  transform-origin: left center;
+}
+
+.segment .title {
+ font-size: 4em;
+ font-weight: bold;
+ color: #FECC00;
+}
+
+.segment .subtitle {
+  font-size: 2em;
+  font-weight: bold;
+  color: #FFF;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.segment .segment-body {
+  color: #FFF;
+}
+
+.segment .title.right,
+.segment .subtitle.right,
+.segment .segment-body.right {
+  text-align: right;
+}
+
+@media only screen and (max-width: 758px) {
+  .segment .title,
+  .segment .title.right,
+  .segment .subtitle,
+  .segment .subtitle.right,
+  .segment .segment-body,
+  .segment .segment-body.right {
+    text-align: center
+  }
+}
+
+@media only screen and (min-width: 758px) {
+  .col-title {
+    margin-top: -2.4em;
+  }
+}
