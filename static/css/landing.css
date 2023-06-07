@@ -1,0 +1,271 @@
+@keyframes carousselAnimation {
+    from {
+        transform: translateX(-100%)
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes carousselAnimation-6 {
+    from {
+        transform: translateX(-130%)
+    }
+    to {
+        transform: translateX(-10%);
+    }
+}
+
+@keyframes lifesaverAnimation {
+    from {
+        transform: translateX(0%) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateX(5%) translateY(5%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(10%) rotate(3deg);
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    position: relative;
+    background-color: #0075BF;
+    font-family: helvetica;
+    line-height: 1;
+}
+
+.noselect {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.noscrollbar {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.noscrollbar::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: calc(40vh + 50vw);
+}
+.hero .wave_bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: calc(40vh + 50vw);
+    right: 0px;
+    z-index: -2;
+}
+.hero .title {
+    z-index: -1;
+    width: 90%;
+    margin: auto;
+    margin-top: 5em;
+}
+
+.ugrodeszka {
+    position: relative;
+    margin-top: 25vh;
+}
+
+.ugrodeszka #projects_header {
+    position: absolute;
+    bottom: 20%;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #FECC00;
+    font-family: helvetica;
+    margin-left: 60%;
+}
+
+.segment {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.segment .title {
+    color: #FFF;
+    font-size: max(40px, 4vw);
+    font-weight: bold;
+    font-family: helvetica;
+    padding-bottom: 0.5em;
+}
+
+.segment .title.right {
+    margin-right: 5%;
+    padding-right: 10vw;
+    text-align: right;
+}
+
+.segment.posters .title {
+    margin-left: 5%;
+    padding-left: 10vw;
+    font-size: max(30px, 5vw);
+}
+
+.segment.posters .lifesaver {
+    width: 50%;
+    margin-left: 45%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    animation: lifesaverAnimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+}
+
+@media (max-width: 768px) {
+    .segment.books {
+        transform: translateX(-5%)
+    }
+}
+
+.segment.posters {
+    margin-top: 6em;
+}
+
+/*.segment.ui {
+   margin-top: 9emcalc(5vw + 6em);
+}*/
+
+@media (min-width: 768px) {
+    .segment.posters {
+        margin-top: 8em;
+    }
+    
+    .segment.ui {
+        margin-top: 10em/*calc(5vw + 6em)*/;
+    }
+}
+@media (min-width: 992px) {
+    .segment.posters {
+        margin-top: 10em;
+    }
+    
+    .segment.ui {
+        margin-top: 12em/*calc(5vw + 6em)*/;
+    }
+}
+
+@media (min-width: 1200px) {
+    .segment.posters {
+        margin-top: 13em;
+    }
+    
+    .segment.ui {
+        margin-top: 18em/*calc(5vw + 6em)*/;
+    }
+}
+
+img.sepia {
+    filter: sepia(1);
+    transition: filter 200ms ease-in-out;
+}
+
+img.sepia:hover {
+    filter: sepia(0);
+}
+
+.segment .rotated {
+    width: 110%;
+    margin-left: -5%;
+}
+
+.rotated.ccw {
+    transform: rotate(-20deg);
+}
+
+.rotated.cw {
+    transform: rotate(20deg);
+}
+
+
+
+.caroussel-host {
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.segment.posters .caroussel-host {
+    transform: rotate(-20deg) translateX(-10%);
+}
+
+.segment.typography .caroussel-host {
+    transform: rotate(20deg) translateX(-10%);
+    min-width: 1200px;
+}
+
+.caroussel {
+    display: flex;
+    transform-origin: center;
+    animation: carousselAnimation;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+}
+
+.caroussel-6 {
+    animation: carousselAnimation-6;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+}
+  
+.caroussel.slower {
+    animation-duration: 10s;
+}
+
+
+body.js-loading .caroussel,
+body.js-loading .caroussel-6
+{
+    animation: none;
+}
+
+.caroussel-passenger {
+    flex: 0 0 auto;
+}
+
+.caroussel-passenger.passenger-2 {
+    width: 50%;
+}
+
+.caroussel-passenger.passenger-3 {
+    width: 33.333%;
+}
+
+.caroussel-passenger.passenger-5 {
+      width: 20%;
+}
+
+.footer {
+    margin-top: -10%;
+}

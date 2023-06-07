@@ -1,0 +1,105 @@
+@media (min-width: 992px){
+    /*Teljes képernyős módban háttérkép, marginok*/
+    body {
+        background-image: url("../media/posters/bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .segment.platonic {
+        margin-top: 300px;
+    }
+
+    .segment.socproblems {
+        margin-top: 300px;
+    }
+    
+    .segment.posters {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 1300px) {
+    /*Teljes képernyős módban háttérkép, marginok*/
+    body {
+        background-image: url("../media/ui/bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .segment.platonic {
+        margin-top: 200px;
+    }
+
+    .segment.socproblems {
+        margin-top: 300px;
+    }
+    
+    .segment.posters {
+        margin-top: 300px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1110px) {
+    /*Teljes képernyős módban háttérkép, marginok*/
+    body {
+        background-image: url("../media/ui/bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .segment.platonic {
+        margin-top: 150px;
+    }
+
+    .segment.socproblems {
+        margin-top: 240px;
+    }
+    
+    .segment.posters {
+        margin-top: 300px;
+    }
+
+    .segment .subtitle {
+        font-size: 1.5em;
+    }
+
+    .segment .title {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 992px){
+    /*Kisebb módban nincs*/
+    body {
+        background-image: none;
+    }
+
+    /*.segment.platonic {
+        margin-top: 100px;
+    }
+
+    .segment.socproblems {
+        margin-top: 100px;
+    }
+    
+    .segment.posters {
+        margin-top: 100px;
+    }*/
+}
+
+@media (min-width: 992px) {
+    /*.socproblems,
+    .posters {
+        margin-top: 200px;
+    }*/
+
+    .posters .row .col-lg.p2 {
+        flex: 1 0 auto;
+        width: 40%;
+    }
+    .posters .row .col-lg.p1 {
+        flex: 1 0 auto;
+        width: 20%;
+    }
+}
